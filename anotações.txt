@@ -1,0 +1,18 @@
+Com o REST (RESTful), é necessário definfir uma função para os métodos http:
+
+class Helloworld(Resource):
+	def get(self):	
+		return "hello word" 
+
+Fora da arquitetura REST, precisamos chamar os métodos em uma variável comparativa:
+
+@app.route('/dev/', methods=['POST', 'GET'])
+def lista_desenvolvedores():
+    if request.method == 'POST':
+	return "Alguma coisa"
+
+https://flask-restful.readthedocs.io/en/latest/
+
+https://web.digitalinnovation.one/course/desenvolvimento-avancado-de-rest-api-com-flask/learning/62d876f2-1981-4da6-9147-d88757b1ce7e
+
+parei na aula 6, 28min
